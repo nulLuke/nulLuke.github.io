@@ -1,0 +1,96 @@
+/* Default Headers */
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(36, 36, 36);
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+h3 {
+    font-size: 34px;
+    font-weight: 400;
+}
+body {
+    margin: 0;
+}
+a {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Banner */
+.banner {
+
+    /* Background image and overlay */
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2)
+        ),
+        url("assets/banners/home.png");
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+/* Navigation Bar */
+.navbar {
+    background:linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+    );
+    /* min-height: 85px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    position:relative; */
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background:linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+    );
+}
+li {
+    /* display: inline; */
+    float: right;
+    /* position:absolute; */
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li:hover {
+    background-color: #00AAAA;
+}
+.active {
+    background-color:#00AAAA;
+}
+/* Banner Title */
+.title {
+    /* Text Alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px; 
+}
