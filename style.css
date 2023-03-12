@@ -38,13 +38,13 @@ body{
     font-weight: 400;
 }
 /* Navigation Bar */
-.navbar{
+#navbar{
     background-color:var(--dark-color);
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+#logo{
     margin: 8px;
     display: block;
     text-align: center;
