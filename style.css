@@ -38,13 +38,13 @@ body{
     font-weight: 400;
 }
 /* Navigation Bar */
-#navbar{
+.navbar{
     background-color:var(--dark-color);
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
-#logo{
+.logo{
     margin: 8px;
     display: block;
     text-align: center;
@@ -54,6 +54,12 @@ body{
     text-decoration: none;
     color: var(--light-color);
     font-size: larger;
+}
+.navbar div a:hover {
+    color: var(--primary-color);
+}
+.playtab:hover {
+    background-color: var(--light-color);
 }
 .playtab {
     background-color:var(--primary-color);
@@ -105,4 +111,25 @@ body{
 }
 .icon{
     width: 150px;
+}
+@media screen and (max-width: 600) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600){
+    .navbar.responsive div {background-color: var(--secondary-color);}
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive div a {
+        float: none;
+        display: none;
+        text-align: left;
+    }
 }
